@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(cors());
 
 app.use(logRequest)
-app.use('/storage-api/', storageRoute);
+app.use('/api/', storageRoute);
 app.use(logError)
 
 app.use(function (req, res, next) {
