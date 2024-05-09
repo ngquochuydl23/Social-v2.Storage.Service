@@ -6,5 +6,5 @@ COPY . .
 RUN yarn install
 RUN yarn add env-cmd
 
-EXPOSE 4000
+EXPOSE 4961
 CMD yarn start:production

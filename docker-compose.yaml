@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  social-v2.storage.service:
+    image: social-v2.storage.service
+    container_name: social-v2.storage.service
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      -  4961:4961
+    restart: always
