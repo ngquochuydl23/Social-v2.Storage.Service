@@ -142,7 +142,7 @@ exports.upload = async (req, res, next) => {
             stream.end();
             logger.info(`${file.filename} is storaged to mongodb`);
             return {
-                url: '/storage-api/bucket/' + bucket._id + '/' + createEncodeFileName(file.filename),
+                url: '/api/bucket/' + bucket._id + '/' + createEncodeFileName(file.filename),
                 mime: file.mimetype,
                 bucketId: bucket._id
             }
