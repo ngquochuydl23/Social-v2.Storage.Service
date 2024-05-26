@@ -6,6 +6,8 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    volumes:
+      - ./uploads:/app/uploads
     ports:
       -  4961:4961
     restart: always

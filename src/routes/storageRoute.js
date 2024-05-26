@@ -34,8 +34,9 @@ const storage = multer.diskStorage({
 
 var upload = multer({ storage });
 
-router.post("/bucket/:bucketId/upload", [upload.any()], storageController.upload);
 router.get("/bucket/:bucketId/:fileName", storageController.getFileByName);
+router.post("/bucket/:bucketId/upload", [upload.any()], storageController.upload);
+
 
 router.get("/bucket/:bucketId/", storageController.getFilesByBucketId);
 router.put("/bucket/:bucketId/", storageController.updateBucket);

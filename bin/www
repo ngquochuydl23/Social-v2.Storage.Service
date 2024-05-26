@@ -10,7 +10,7 @@ var { server, configureMongoDb } = require('../src/app');
  * Get port from environment and store in Express.
  */
 var debug = require('debug')('NFood.Storage:server');
-var port = normalizePort(process.env.PORT || '4961');
+var port = normalizePort(process.env.PORT || 4961);
 //app.set('port', port);
 
 /**
